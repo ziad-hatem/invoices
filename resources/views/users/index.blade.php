@@ -2,7 +2,7 @@
 @section('css')
 
 @section('title')
-    المستخدمين - مورا سوفت للادارة الفواتير
+    المستخدمين - مشروع زياد للادارة الفواتير
 @stop
 
 <!-- Internal Data table css -->
@@ -118,7 +118,7 @@
                     <h6 class="modal-title">حذف المستخدم</h6><button aria-label="Close" class="close"
                         data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
                 </div>
-                <form action="{{ route('users.destroy', 'test') }}" method="post">
+                <form action="{{ route('users.destroy', 'delete') }}" method="post">
                     {{ method_field('delete') }}
                     {{ csrf_field() }}
                     <div class="modal-body">

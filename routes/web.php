@@ -86,6 +86,8 @@ Route::post('Search_customers', [Customers_Report::class, 'Search_customers']);
 
 Route::get('MarkAsRead_all', [InvoicesController::class, 'MarkAsRead_all'])->name('MarkAsRead_all');
 
+// Route::post('')
+
 Route::middleware('auth')->group(function () {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);

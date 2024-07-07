@@ -28,7 +28,11 @@
                                 stroke-linejoin="round" class="feather feather-bell">
                                 <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                                 <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                            </svg><span class=" pulse"></span></a>
+                            </svg>
+                            @if (auth()->user()->unreadNotifications->count() != 0)
+                                <span class=" pulse"></span>
+                            @endif
+                        </a>
                         <div class="dropdown-menu">
                             <div class="menu-header-content bg-primary text-right">
                                 <div class="d-flex">
